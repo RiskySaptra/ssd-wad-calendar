@@ -12,7 +12,7 @@ const Calendar = () => {
   const daysInMonthHooks = useGetDaysInMonth();
 
   return (
-    <div className="p-4 h-screen">
+    <div className="p-4">
       <h1 className="text-2xl font-bold mb-4 text-center">{getTitle()}</h1>
       <CreateOrEditEvent {...handleCreateOrEdit} {...daysInMonthHooks} />
       <div className="grid grid-cols-7 gap-1 bg-gray-700 p-2   rounded-[10px]">
